@@ -1,0 +1,94 @@
+/* Smart Reply Button */
+.smart-reply-assistant {
+    margin-right: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 4px 4px;
+}
+.smart-reply-assistant:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+.smart-reply-assistant[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Tone Selection */
+.smart-tone-selector {
+    position: absolute;
+    top: -250px; 
+    left: 0;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 16px;
+    width: 280px;
+    z-index: 10000;
+    display: none;
+    font-family: 'Google Sans', sans-serif;
+}
+.smart-tone-selector h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+}
+.smart-tone-selector .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+/* Individual Tone Option Buttons */
+.smart-tone-selector .options-grid button {
+    padding: 8px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: white; 
+    color: #3c4043; 
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+    text-align: center;
+    white-space: nowrap; 
+}
+
+.smart-tone-selector .options-grid button:hover {
+    background: #f1f3f4;
+}
+
+.smart-tone-selector .options-grid button.selected-tone {
+    background: #e8f0fe; 
+    color: #1a73e8; 
+    border-color: #e8f0fe; 
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.smart-tone-selector .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.smart-tone-selector .action-buttons button {
+    background: #1a73e8; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.smart-tone-selector .action-buttons button:hover {
+    background: #174ea6; 
+}
